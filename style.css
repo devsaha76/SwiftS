@@ -13,7 +13,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: white;
+  background: linear-gradient(135deg, #F7F4EF, #CFC8BB, #7A7A7A);
   font-weight: 600;
   font-style: normal;
   text-align: center;
@@ -67,14 +67,17 @@ body {
 }
 
 .homepage-container {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.15);
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   width: 90%;
   max-width: 400px;
   margin: 0 auto;
   position: relative;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 h1 {
