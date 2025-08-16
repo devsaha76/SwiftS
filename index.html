@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <div id="letters"></div>
     <div id="homepage">
         <div class="hpmepage-container">
             <h1>SwiftS</h1>
@@ -26,9 +26,26 @@
                         <option value="sentence">Sentences Mode</option>
                     </select>
                 </div>
+                <div class="form-group" id="difficulty-option">
+                    <label for="difficulty">Select Difficulty:</label>
+                    <select id="difficulty" required>
+                        <option value="easy">Easy (4 letter words)</option>
+                        <option value="moderate">Moderate (6 letter words)</option>
+                        <option value="hard">Hard (8-10 letter words)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Choose Category:</label>
+                    <select id="category" required>
+                        <option value="science">Science</option>
+                        <option value="computer">Computer</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                </div>
+                <button type="submit" id="startGameButton">Start</button>
             </form>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
