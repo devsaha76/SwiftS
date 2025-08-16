@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'HRC';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: white;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.homepage-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 19px;
+    color: rgba(0, 0, 0, 0.842);
+}
+
