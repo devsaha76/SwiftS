@@ -32,4 +32,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+let totalTime = 60;
+let timeLeft = totalTime;
+
+const circle = document.querySelector('.progress-ring__progress');
+const radius = 50;
+const circumference = 2 * Math.PI * radius;
+circle.style.strokeDasharray = circumference;
+circle.style.strokeDashoffset = 0;
+
+function setProgress(time) {
+    const offset = circumference - (time / totalTime) * circumference;
+    circle.style.strokeDashoffset = offset;
+    document.getElementById('time-left').textContent = time;
+}
+
+function startTimer() {
+    const timer = setInterval(() => {
+        timeLeft--;
+        setProgress(timeLeft);
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+        }
+    }, 1000);
+}
+
+startTimer();
+
 

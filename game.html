@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,56 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>SwiftS</title>
 </head>
+
 <body>
 
     <div id="letters"></div>
-    <div id="homepage"></div>
+    <div id="homepage">
+        <div class="text-area"></div>
+        <div class="button-group">
+            <button type="button" id="newTestBtn">New</button>
+            <button type="button" id="restartTestBtn">Restart</button>
+        </div>
+        <div class="stats-area">
+            <div class="stats-container">
+                <div class="stat-timer">
+                    <svg viewBox="0 0 110 110" width="110" height="110" class="progress-ring">
+                        <circle class="progress-ring__bg" cx="53" cy="55" r="50" fill="none" stroke="#ddd"
+                            stroke-width="4" stroke-dasharray="332" stroke-dashoffset="0" style="transform: rotate(-90deg);
+                 transform-origin: center center;" />
+
+                        <circle class="progress-ring__progress" cx="53" cy="55" r="50" fill="none" stroke="#25a3d1"
+                            stroke-width="4" stroke-linecap="round" stroke-dasharray="332" stroke-dashoffset="0" style="transform: rotate(-90deg);
+                 transform-origin: center center;
+                 transition: 1s linear;" />
+
+                        <circle class="progress-ring__dot" cx="55" cy="7" r="2" fill="#25a3d1" style="transform-origin: 55px 55px;
+                 transition: 1s linear;
+                 transform: rotate(0deg);" />
+                    </svg>
+
+
+                    <div class="timer-text">
+                        <span id="time-left">60</span><br>seconds
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="wpm">0</div>
+                    <div class="stat-label">words/min</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="cpm">0</div>
+                    <div class="stat-label">chars/min</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="accuracy">0</div>
+                    <div class="stat-label">accuracy</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="game.js"></script>
 </body>
+
 </html>

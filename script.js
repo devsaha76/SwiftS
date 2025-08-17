@@ -18,3 +18,19 @@ for (let i = 0; i < 25; i++) {
     span.style.animationDuration = (5 + Math.random() * 5) + "s";
     container.appendChild(span);
 }
+
+document.getElementById('gameForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const playerName = document.getElementById('playerName').value;
+    const inputType = document.getElementById('inputType').value;
+    const difficulty = document.getElementById('difficulty').value;
+    const cateegory = document.getElementById('category').value;
+    const queryParams = new URLSearchParams({
+        name: playerName,
+        type: inputType,
+        difficulty: difficulty,
+        cateegory: cateegory
+    });
+    window.location.href = `game.html?${queryParams.toString()}`;
+})
